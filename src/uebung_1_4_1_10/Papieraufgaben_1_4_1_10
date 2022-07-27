@@ -1,0 +1,89 @@
+
+Aufgabe 1.4 Papieraufgabe (Unterschied zwischen checked und unchecked)
+	checked:
+		- Die hier enthaltenden Exceptions müssen behandelt werden
+		- hier wird auch überprüft, ob die Exceptions behandelt / überprüft werden
+		
+		- Das wären beispielsweise:
+			1. IOException
+			2. FileNotFoundException
+	
+	unchecked:
+		- Diese Exceptions werden vom Java Compiler nicht behandelt
+		
+		- Das wären beispielsweise:
+			1. VitualMachineError
+			2. LinkageError
+			3. RuntimeException
+			4. OutOfMemoryError
+			5. NoSuchFieldError
+			6. NullpointerException
+	
+
+Aufgabe 1.5 Papieraufgabe (grundsätzliche Möglichkeiten für die Erstellung eigener Exception Klassen)
+	
+	- checked und unchecked Exception
+	
+	- Hier haben wir dir Möglichkeit unsere Exception Klasse mit entsprechenden Namen von einer schon bestehenden 
+		Exception Klasse erben zu lassen 
+		
+	public class Ueberlauf() extends Exceptions { 
+		
+		Der entsprechende Variablen wird als super(); von der Oberklasse geerbt // Standardkonstruktor
+		
+		Oder mit Mitgabe von einer Message -> ..... (String msg) { 
+		
+				super(msg);
+		
+		}
+		
+	}
+	
+	Wir haben hier ebenfalls noch die Möglichkeit eine :
+	
+	public class Ueberlauf() extends Exceptions { 
+	
+		zu erstellen und hier mit den Default Konstrukoren arbeiten
+		Dieser wird von der Oberklasse Exception abgeleitet
+	
+	}
+	
+	Vordefinierte Exceptionklasse ist hier viel zu unspezifisch
+	
+	
+Aufgabe 1.6 Papieraufgabe (Was passiert, wenn ein catch Block nicht mit dem Typ einer geworfenen Exception übereinstimmt?)
+
+	- Compiler fehler bzw. programm absturz bei runtime exception
+
+
+Aufgabe 1.7 Papieraufgabe (Was passiert, wenn mehrere catch Blöcke den gleichen Typ von Exception abfrangen?)
+
+	- Compiler Fehler, da das Programm nicht weis, welcher catch Block verwendert werden soll
+
+
+Aufgabe 1.8 Papieraufgabe (Was ist ein "resource" Leak?)
+
+	- Wenn der Scanner zum Beispiel nicht geschlossen wird, dann werden die Ressourcen weiterhin verwendet
+	
+	- Durch sc.close wird Scanner geschlossen
+
+
+Aufgabe 1.9 Papieraufgabe (Wozu dient der "finally" Block?)
+
+	- Der Finally Block wird bei try{ ... } catch { ... } finally{ ... } immer aufgerufen.
+	- Hier ist egal ob eine Exception geworfen wird oder eben nicht.
+	
+	- Hauptsächlich kann man sagen, dass dieser Block optional ist.
+
+	- Mit Hilfe des finally Blockes können Systemressourcen beispielsweise wieder freigegeben werden
+		Hier kann man den Scanner zum Beispiel schließen und / oder ganz andere Themen und Bereiche im Programm
+	- Freigabe von Systemressourcen sind mit finally möglich
+
+Aufgabe 1.10 Papieraufgabe (Warum sollte Exceptionhandling nicht für den üblichen Kontrollfluss verwendet werden?)
+
+	- 
+
+
+
+
+
