@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class KreuzungTest {
 	/**
-	 * Einfacher Bubblesort für integer
+	 * Einfacher Bubblesort fuer integer
 	 */
 
 	public static void sortiere(int[] kArray) {
@@ -46,10 +46,10 @@ public class KreuzungTest {
 		if (n > 0) {
 			Kreuzung[] kArr = new Kreuzung[n];
 
-			// Zulässige Ampelanzahl für eine Kreuzung
+			// Zulaessige Ampelanzahl fuer eine Kreuzung
 			int[] typ = { 2, 3, 4, 5, 6 };
 
-			// Zufallsmässige Erzeugung
+			// Zufallsmaessige Erzeugung
 			for (int i = 0; i < n; i++) {
 				int zufallsIndex = (int) (Math.random() * 4);
 				kArr[i] = new Kreuzung(typ[zufallsIndex]);
