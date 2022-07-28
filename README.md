@@ -20,6 +20,6 @@ Hiermit möchte ich ausdrücklich darauf hinweisen, dass ich das eigenständige 
 SDK: 15.0.1
 
 Link zum Moodle Raum:
-[Hier der Link zum Prog1 Moodlekurs](https://moodle.hs-coburg.de/course/view.php?id=7870)
+[Hier der Link zum Prog2 Moodlekurs](https://moodle.hs-coburg.de/course/view.php?id=7870)
 
 
